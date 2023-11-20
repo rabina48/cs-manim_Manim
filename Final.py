@@ -43,9 +43,11 @@ class BFSToQueue(Slide):
             "BFS is an algorithm for traversal to explore nodes and \n "
             "edges of a graph."
         )
+        self.next_slide()
         bullet_point_2_text = (
             "It runs with a time complexity of O(V+E)."
         )
+        self.next_slide()
         bullet_point_3_text = (
             "It is particularly useful for finding the shortest path on \n "
             "an unweighted graph."
@@ -333,11 +335,11 @@ class BFSToQueue(Slide):
 
         # Display the heading, text, and arrow
         self.play(Create(heading), Create(text_display), Create(arrow))
-        self.wait(3)
+        self.wait(5)
 
         # Move arrow to the third line
         self.play(arrow.animate.next_to(text_display[45], LEFT, buff=0.1))
-        self.wait(2)
+        self.wait(5)
 
         # Move arrow to the fourth line
         #self.play(arrow.animate.next_to(text_display[57], LEFT, buff=0.1))
@@ -345,41 +347,41 @@ class BFSToQueue(Slide):
 
         # Move arrow to the fifth line
         self.play(arrow.animate.next_to(text_display[114], LEFT,   buff=0.1))
-        self.wait(2)
+        self.wait(5)
 
         # Move arrow to the sixth line
         self.play(arrow.animate.next_to(text_display[126], LEFT,  buff=0.1))
-        self.wait(2)
+        self.wait(5)
 
         # Move arrow to the seventh line
         self.play(arrow.animate.next_to(text_display[141], LEFT,  buff=0.1))
-        self.wait(2)
+        self.wait(5)
 
         # Move arrow to the eight line
         self.play(arrow.animate.next_to(text_display[219], LEFT,  buff=0.1))
-        self.wait(2)
+        self.wait(5)
 
         # Move arrow to the ninth line
         self.play(arrow.animate.next_to(text_display[263], LEFT,  buff=0.1))
-        self.wait(2)
+        self.wait(5)
 
         # Move arrow to the tenth line
         self.play(arrow.animate.next_to(text_display[291], LEFT,  buff=0.1))
-        self.wait(2)
+        self.wait(5)
 
         # Move arrow to the eleventh line
         self.play(arrow.animate.next_to(text_display[344], LEFT,  buff=0.1))
-        self.wait(2)
+        self.wait(5)
 
         # Move arrow to the twelveth line
         self.play(arrow.animate.next_to(text_display[356], LEFT,  buff=0.1))
-        self.wait(2)
+        self.wait(5)
 
         # Fade out the arrow
         self.play(FadeOut(arrow))
 
         # Example animation: Move the heading and change its color after 3 seconds
-        self.wait(2)
+        self.wait(5)
         #  # Create the first rectangular box
         # box1 = Rectangle(width=box_width, height=box_height, fill_opacity=0, color=WHITE)
         # box1.to_edge(RIGHT)  # Position the box at the middle right of the scene
@@ -495,47 +497,47 @@ class BFSToQueue(Slide):
         time_complexity_label = Text("O(1)", color=RED).scale(0.4)
         time_complexity_label.next_to(text_display[10], RIGHT, buff=0.2).shift(2 * RIGHT)
         self.play(FadeIn(time_complexity_label))
-        self.wait(2)
-
+        self.wait(5)
+        self.next_slide()
         time_complexity_label = Text("O(1)", color=RED).scale(0.4)
         time_complexity_label.next_to(text_display[22], RIGHT, buff=0.2).shift(2 * RIGHT)
         self.play(FadeIn(time_complexity_label))
-        self.wait(2)
-
+        self.wait(4)
+        self.next_slide()
         time_complexity_label = Text("O(1)", color=RED).scale(0.4)
         time_complexity_label.next_to(text_display[32], RIGHT, buff=0.2).shift(3 * RIGHT)
         self.play(FadeIn(time_complexity_label))
-        self.wait(2)
-
+        self.wait(4)
+        self.next_slide()
         time_complexity_label = Text("O(V)", color=RED).scale(0.4)
         time_complexity_label.next_to(text_display[52], RIGHT, buff=0.2).shift(3 * RIGHT)
         self.play(FadeIn(time_complexity_label))
-        self.wait(2)
+        self.wait(4)
 
         time_complexity_label = Text("O(1)", color=RED).scale(0.4)
         time_complexity_label.next_to(text_display[69], RIGHT, buff=0.2).shift(2 * RIGHT)
         self.play(FadeIn(time_complexity_label))
-        self.wait(2)  
+        self.wait(4)  
 
         time_complexity_label = Text("O(E)", color=RED).scale(0.4)
         time_complexity_label.next_to(text_display[99], RIGHT, buff=0.2).shift(2 * RIGHT)
         self.play(FadeIn(time_complexity_label))
-        self.wait(2) 
+        self.wait(4) 
 
         time_complexity_label = Text("O(1)", color=RED).scale(0.4)
         time_complexity_label.next_to(text_display[112], RIGHT, buff=0.2).shift(2 * RIGHT)
         self.play(FadeIn(time_complexity_label))
-        self.wait(2)              
+        self.wait(4)              
 
         time_complexity_label = Text("O(1)", color=RED).scale(0.4)
         time_complexity_label.next_to(text_display[129], RIGHT, buff=0.3).shift(2 * RIGHT)
         self.play(FadeIn(time_complexity_label))
-        self.wait(2) 
+        self.wait(3) 
 
         time_complexity_label = Text("O(1)", color=RED).scale(0.4)
         time_complexity_label.next_to(text_display[139], RIGHT, buff=0.3).shift(2 * RIGHT)
         self.play(FadeIn(time_complexity_label))
-        self.wait(2)      
+        self.wait(3)      
 
         self.play(FadeOut(*self.mobjects))
 
