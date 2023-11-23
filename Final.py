@@ -4,7 +4,10 @@ from manim_slides import Slide
 from manim.opengl import *
 from manim_slides import Slide
 
-
+#studentname:
+#Rabina Shrestha
+#Isha Narang
+#githublink: 
 
 class BFSToQueue(Slide):
     def construct(self):
@@ -83,11 +86,7 @@ class BFSToQueue(Slide):
         # Fade out all elements
         self.play(FadeOut(title_bfs, bullet_point_1, bullet_point_2, bullet_point_3))
         self.next_slide()
-        
-        
-        # title_bfs_trave = Text("BFS Traversal", font="Calibri", font_size=36, color=YELLOW_A)
-        # title_bfs_trave.next_to(title_bfs_trave, LEFT*0.5, buff=0.5)
-        # title_bfs_trave.shift(UP * 3.5)  # Adjust the 0.5 value to change how far up it shifts
+    
         
             # Create the title text
         title_bfs_trave = Text("BFS Traversal", font="Calibri", font_size=36, color=BLUE_C, weight=BOLD)
@@ -172,9 +171,7 @@ class BFSToQueue(Slide):
   # Position at the upper right corner
         self.play(Write(level_text))
         self.wait(2)
-        
-        
-        
+           
 
         bfs_order = ["1", "2", "3", "4", "5", "6","7"]
         for i, label in enumerate(bfs_order):
@@ -340,10 +337,6 @@ class BFSToQueue(Slide):
         # Move arrow to the third line
         self.play(arrow.animate.next_to(text_display[45], LEFT, buff=0.1))
         self.wait(5)
-
-        # Move arrow to the fourth line
-        #self.play(arrow.animate.next_to(text_display[57], LEFT, buff=0.1))
-        #self.wait(2)
 
         # Move arrow to the fifth line
         self.play(arrow.animate.next_to(text_display[114], LEFT,   buff=0.1))
